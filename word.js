@@ -8,9 +8,16 @@ window.onload = function () {
 };
 
 function checkWord(event) {
+    let question = prompt("Введите слово на английском языке");
     let image = event.target;
     let word = image.id;
-    alert(word);
+    if (question == word) {
+        alert("Верно!");
+    }
+    else {
+        alert("Неверно! Верный перевод слова - " + word);
+    }
+    // alert(word);
 }
 
 function gen(words) {
